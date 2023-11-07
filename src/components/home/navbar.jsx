@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import navData from "../../constants/data";
+import { navData } from "../../constants/data";
 import styled from "@emotion/styled";
 
 const StyledBox = styled(Box)`
