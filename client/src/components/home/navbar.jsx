@@ -19,13 +19,12 @@ const StyledText = styled(Typography)`
 `;
 
 const StyledImg = { width: "64px" };
-
 const Navbar = () => {
   return (
     <>
       <StyledBox>
-        {navData.map((data) => (
-          <StyledContent>
+        {navData.map((data, index) => (
+          <StyledContent key={index}>
             <img src={data.url} style={StyledImg} alt="" />
             <StyledText>{data.text}</StyledText>
           </StyledContent>
